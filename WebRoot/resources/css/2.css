@@ -1,0 +1,210 @@
+.back{
+	margin:0px;
+	width: 100%;
+	height: 100%;
+}
+.library{
+	float: left;
+	margin: 0px;
+	width: 20%;
+	height: 100%;	
+}
+.list1{
+	float: left;
+	margin: 0px;
+	width: 100%;
+	height: 10%;
+	padding: 0px;
+}
+.div1{
+	float: left;
+	width: 49.5%;
+	height: 100%;
+	margin: 0px;
+}
+.line1{
+	float: left;
+	height:30px;
+	width: 1%;
+	margin-top: 15px;
+	margin-left: 0px;
+
+}
+.list1 p{
+	height: 100%;
+	line-height:350%;
+	font-family: "微软雅黑";
+	margin: 0px;
+	text-align: center;
+}
+.list1 p:hover{
+	height: 100%;
+	line-height:350%;
+	font-family: "微软雅黑";
+	margin: 0px;
+	text-align: center;
+	color: deepskyblue;
+}
+.line2{
+	float: left;
+	height: 0.5%;
+	width: 60%;
+	margin-left: 50px;
+	margin-top: 0px;
+	background-color: lightgrey;
+}
+.line3{
+	float: left;
+	height:90%;
+	width: 0.2%;
+	margin-top: 30px;
+	margin-left: 0px;
+	background-color: lightgrey;
+}
+.list2{
+	float: left;
+	margin: 0px;
+	width: 100%;
+	height: 89.5%;
+	padding: 0px;
+}
+.list2 div{
+	font-family: "微软雅黑";
+	color: black;
+	text-align: left;
+	width: 100%;
+	height: 5%;
+	padding-top: 10px;
+	background-color: white;
+}
+.list2 div:hover{
+	font-family: "微软雅黑";
+	color: deepskyblue;
+	text-align: left;
+	width: 100%;
+	height: 5%;
+	padding-top: 10px;
+	background-color: white;
+}
+.response{
+	float: left;
+	margin: 0px;
+	width: 79.8%;
+	height: 100%;
+}
+.title1{
+	float: left;
+	height: 15%;
+	width: 100%;
+}
+.div2{
+	float: left;
+	height: 70px;
+	width: 20%;
+	padding-top: 30px;
+	margin: 0px;
+	text-align: center;
+	font-family: "微软雅黑";
+	font-size: 25px;
+}
+.text1{
+	float: right;
+	margin-top: 30px;
+	height: 30px;
+	width: 200px;
+	overflow:scroll;
+	overflow-x:hidden;
+	overflow-y: hidden;
+	font-family: "微软雅黑";
+	font-size: 15px;
+
+}
+.search1{
+	float: right;
+	margin-top: 31px;
+	margin-right: 30px;
+	height: 35px;
+	width: 50px;
+	font-family: "微软雅黑";
+	font-weight: 600;
+	font-size: 15px;
+	background-color: lightcyan;
+	border: none;
+}
+.search1:hover{
+	float: right;
+	margin-top: 30px;
+	margin-right: 30px;
+	height: 36px;
+	width: 50px;
+	font-weight: 600;
+	font-family: "微软雅黑";
+	font-size: 15px;
+	background-color: lightgray;
+	border: none;
+}
+.insert{
+	float: right;
+	margin-top: 32px;
+	margin-right: 20px;
+	height: 35px;
+	width: 150px;
+	color: white;
+	font-family: "黑体";
+	font-weight: 600;
+	font-size: 15px;
+	background-color: dodgerblue;
+	border: none;
+}
+.insert:hover{
+	float: right;
+	margin-top: 32px;
+	margin-right: 20px;
+	color: white;
+	font-weight: 600;
+	height: 35px;
+	width: 150px;
+	font-family: "黑体";
+	font-size: 15px;
+	background-color: blue;
+	border: none;
+}
+.content1{
+	float: left;
+	width: 100%;
+	height: 85%;
+}
+.line4{
+	float: left;
+	height: 0.5%;
+	width: 90%;
+	margin-left: 50px;
+	margin-top: 0px;
+	background-color: lightgrey;
+}
+.title2{
+	height: 10%;
+	width: 100%;
+	float: left;
+}
+.p1{
+	float: left;
+	width: 15%;
+	text-align: center;
+	font-family: "微软雅黑";
+	font-size: 20px;
+}
+.p2{
+	float: left;
+	width: 60%;
+	text-align: center;
+	font-family: "微软雅黑";
+	font-size: 20px;
+}
+.p3{
+	float: left;
+	width: 25%;
+	text-align: center;
+	font-family: "微软雅黑";
+	font-size: 20px;
+}

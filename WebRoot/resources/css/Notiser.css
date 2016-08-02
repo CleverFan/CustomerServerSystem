@@ -1,0 +1,25 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+.notiser {
+  width: 100%;
+  border-radius: 3px;
+  text-align: center;
+  color: white;
+  padding: 15px 15px;
+  font-size: 14px;
+  font-family: 'Open Sans';
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.notiser.success {
+  background-color: #31B893;
+}
+
+.notiser.warning {
+  background-color: #D66882;
+}
+
+.notiser.basic {
+  background-color: #d0d3d3;
+}

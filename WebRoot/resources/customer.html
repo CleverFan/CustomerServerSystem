@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, user-scalable=yes">
+<title>在线客服</title>
+<link rel="stylesheet" type="text/css"
+	href="/CustomerServerSystem/resources/css/normalize.css" />
+<link rel="stylesheet" type="text/css"
+	href="/CustomerServerSystem/resources/css/default.css">
+<link rel='stylesheet prefetch'
+	href='http://fonts.useso.com/css?family=Open+Sans'>
+<link rel="stylesheet" type="text/css"
+	href="/CustomerServerSystem/resources/css/customerstyles.css">
+<link rel="stylesheet" type="text/css"
+	href="/CustomerServerSystem/resources/css/jquery.dialogbox.css">
+<link rel="stylesheet" type="text/css"
+	href="/CustomerServerSystem/resources/css/jquery.notify.css">
+<script type="text/javascript"
+	src='/CustomerServerSystem/resources/js/jquery.min.js'></script>
+<script type="text/javascript"
+	src="/CustomerServerSystem/resources/js/jquery.qqFace.js"></script>
+<script type="text/javascript"
+	src="/CustomerServerSystem/resources/js/jquery.notify.js"></script>
+<!--消息提示-->
+<link href="/CustomerServerSystem/resources/css/Notiser.css"
+	rel="stylesheet">
+
+<script type="text/javascript">
+	$.notifySetup({sound: '/CustomerServerSystem/resources/audio/notify.wav'});
+	$(function() {
+		$('.emotion').qqFace({
+			id : 'facebox', //表情盒子的ID
+			assign : 'text', //给那个控件赋值
+			path : 'face/' //表情存放的路径
+		});
+		$(".send").click(function() {
+			var str = $("#text").val();
+			$("#show").html(replace_em(str));
+		});
+	});
+	//查看结果
+	function replace_em(str) {
+		str = str.replace(/\</g, '&lt;');
+		str = str.replace(/\>/g, '&gt;');
+		str = str.replace(/\n/g, '<br/>');
+		str = str.replace(/\[em_([0-9]*)\]/g,
+				'<img src="face/$1.gif" border="0" />');
+		return str;
+	}
+</script>
+</head>
+<body>
+	<div>在线客服</div>
+
+
+	<div class="container">
+
+		<div class="row">
+			<div class="col-md-2 col-md-offset-10 col-xs-3 col-xs-offset-9">
+				<div class="notify right-notify"></div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="demo">
+		<svg class="sidebar">
+		  
+			<path class="s-path" id="s-path" fill="#58f0f0"
+				d="M0,0 50,0 a0,250 0 1,1 0,500 L0,500" />
+			<!--<text x="10" y="20" style="fill:green;font-size:32px;font-weight:bold;">
+			<textPath xlink:href="s-path">在线客服</textPath>-->
+			<!--
+			<text x="15" y="100" 
+				font-family="Verdana" font-size="30" fill="blue" >
+				在
+			</text>
+			<text x="15" y="150" 
+				font-family="Verdana" font-size="30" fill="blue" >
+				线
+			</text>
+			<text x="15" y="200" 
+				font-family="Verdana" font-size="30" fill="blue" >
+				客
+			</text>
+			<text x="15" y="250" 
+				font-family="Verdana" font-size="30" fill="blue" >
+				服
+			</text>
+			-->
+		  </svg>
+		<div class="static">
+			<div class="static__text"></div>
+		</div>
+		<div class="sidebar-content" id="sidebar-content">
+			<div class="robot_div">
+				<div class="contact robot" id="wl_robot">
+					<img src="/CustomerServerSystem/resources/img/3.png" alt=""
+						class="contact__photo" /> <span class="contact__name">五脸机器人</span>
+					<span class="contact__status online"></span>
+				</div>
+			</div>
+
+		</div>
+		<div class="chat">
+			<span class="chat__back"></span> <span class="chat__status">status</span>
+			<div class="chat__person">
+				<span class="chat__online active"></span> <span class="chat__name">Huehue
+					Huehue</span>
+			</div>
+			<div class="chat__messages" id="msg_body"></div>
+
+			<div class="toolsBar">
+				<img src="/CustomerServerSystem/resources/img/6.jpg" alt=""
+					class="emotion" /> <img
+					src="/CustomerServerSystem/resources/img/7.jpg" alt=""
+					class="zanding" /> <img
+					src="/CustomerServerSystem/resources/img/8.jpg" alt=""
+					class="picture" /> <img
+					src="/CustomerServerSystem/resources/img/9.jpg" alt=""
+					class="sounds" />
+			</div>
+			<!--<input type="text" name="text" id="text" class="chat__input" placeholder="Your message" />-->
+			<textarea class="chat__input" id="text" name="text"
+				placeholder="Your message"></textarea>
+			<input type="button" id="send" class="chat__send"
+				onclick="sendMessage(this.text.value)" />
+		</div>
+	</div>
+
+	<!-- -------评价对话框--------------- -->
+	<div id="dialog"></div>
+	<div id="message"></div>
+
+	<script src="/CustomerServerSystem/resources/js/jquery.dialogBox.js"></script>
+
+	<script>
+		/* $(function() {
+			$('.chat__back').click(function() {
+				$('#dialog').dialogBox({
+					width : 400,
+					hasClose : true,
+					effect : 'fade',
+					hasBtn : true,
+					type : 'correct',
+					confirm : function() {
+						$("#message").dialogBox({
+							content : '感谢使用',
+							hasClose : true
+						});
+					},
+					cancel : function() {
+						alert("点击了不满意！");
+					},
+					title : '评价',
+					content : '您对本次服务满意吗？'
+				});
+			});
+
+		}); */
+	</script>
+
+	<script type="text/javascript"
+		src="/CustomerServerSystem/resources/js/main.js"></script>
+	<script type="text/javascript"
+		src="/CustomerServerSystem/resources/js/chat.js"></script>
+
+	<script src="/CustomerServerSystem/resources/js/Notiser.js"></script>
+
+
+</body>
+</html>
